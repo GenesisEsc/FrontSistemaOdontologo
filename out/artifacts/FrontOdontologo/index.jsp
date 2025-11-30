@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EndoDental - Expertos en Sonrisas</title>
+    <title>EndoDental</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,14 +30,15 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
-                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                //elimina el link de prueba, debe ir #
+                <li class="nav-item"><a class="nav-link" href="<%= request.getContextPath() %>/dashboard_odontologo.jsp">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#historia">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
                 <li class="nav-item"><a class="nav-link" href="#pacientes">Pacientes</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 <li class="nav-item ms-2">
-                    <a class="nav-link shadow-sm" href="#" title="Iniciar Sesión"
+                    <a class="nav-link shadow-sm" href="<%= request.getContextPath() %>/login.jsp" title="Iniciar Sesión"
                        style="background-color: #EC647D; color: white !important; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
                         <i class="fas fa-user"></i>
                     </a>
@@ -193,7 +194,7 @@
 <section id="equipo" class="section-padding bg-soft-blue">
     <div class="container">
         <h2 class="section-title text-center mb-2">NUESTRO EQUIPO PROFESIONAL</h2>
-        <p class="text-center mb-5 text-muted">6 odontólogos altamente capacitados listos para atenderte.</p>
+        <p class="text-center mb-5 text-muted">Odontólogos altamente capacitados listos para atenderte.</p>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
