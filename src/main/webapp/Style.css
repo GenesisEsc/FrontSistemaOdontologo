@@ -782,3 +782,46 @@ h1 {
     transform: scale(1.02);
     color: white;
 }
+/* =========================================
+   10. ESTILOS MÓDULO ADMIN (USUARIOS)
+   ========================================= */
+
+/* Badges de Roles */
+.role-badge {
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.role-admin {
+    background-color: #333;
+    color: white;
+}
+
+.role-doctor {
+    background-color: #BDE1EE;
+    color: #23819c; /* Azul oscuro para contraste */
+}
+
+.role-secretaria {
+    background-color: #FFEEF2;
+    color: #EC647D;
+}
+
+/* Switch de Estado (Activo/Inactivo) */
+.form-check-input:checked {
+    background-color: #2da1c2;
+    border-color: #2da1c2;
+}
+
+/* Área oculta para campos de doctor */
+#camposOdontologo {
+    display: none; /* Se oculta por defecto */
+    background-color: #F0F8FB;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 1px dashed #BDE1EE;
+}

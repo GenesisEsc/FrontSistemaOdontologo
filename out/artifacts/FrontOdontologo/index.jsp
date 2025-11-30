@@ -30,8 +30,7 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
-                //elimina el link de prueba, debe ir #
-                <li class="nav-item"><a class="nav-link" href="<%= request.getContextPath() %>/dashboard_odontologo.jsp">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="<%= request.getContextPath() %>/usuarios.jsp">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#historia">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>

@@ -30,7 +30,6 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
-                //elimina el link de prueba, debe ir #
                 <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#historia">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
