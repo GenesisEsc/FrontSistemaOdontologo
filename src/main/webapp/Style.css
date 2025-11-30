@@ -1,3 +1,375 @@
+/* =========================================
+   1. ESTILOS GENERALES Y NAVBAR
+   ========================================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Color de fondo para la barra de navegación */
 .my-navbar {
     background-color: #BDE1EE;
+}
+
+/* Navbar Principal */
+.navbar {
+    background-color: #FFEEF2;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 600;
+    margin: 0 5px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover en menú */
+.nav-link:hover {
+    color: #EC647D !important;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   2. BANNER Y SECCIONES GENERALES
+   ========================================= */
+.hero-section {
+    position: relative;
+    margin: 20px auto;
+    max-width: 1200px;
+    height: 450px;
+    background-image: url('img/equipoodonto.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 30, 80, 0.4);
+    border-radius: 50px;
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    opacity: 0;
+}
+
+/* Espaciado General de Secciones */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Fondos alternados */
+.bg-white { background-color: #ffffff; }
+.bg-soft-pink { background-color: #FFEEF2; }
+.bg-soft-blue { background-color: #F0F8FB; }
+
+/* Títulos de Sección */
+.section-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* =========================================
+   3. HISTORIA
+   ========================================= */
+.history-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.history-quote {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #EC647D;
+    font-style: italic;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* =========================================
+   4. SERVICIOS (FLIP CARDS / TARJETAS GIRATORIAS)
+   ========================================= */
+.services-section {
+    padding: 50px 0;
+}
+
+#carouselServicios {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 30px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-overlay-title {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(255, 238, 242, 0.9);
+    padding: 20px;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.flip-card-back {
+    background-color: #BDE1EE;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.flip-card-back h3 {
+    color: #EC647D;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.flip-card-back p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* =========================================
+   5. EQUIPO PROFESIONAL
+   ========================================= */
+.team-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    border-bottom: 5px solid #BDE1EE;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-bottom: 5px solid #EC647D;
+}
+
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #FFEEF2;
+}
+
+.doctor-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.doctor-specialty {
+    color: #EC647D;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.doctor-desc {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* =========================================
+   6. PACIENTES / TESTIMONIOS (AQUÍ ESTABA EL PROBLEMA)
+   ========================================= */
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    border-color: #BDE1EE;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: #EC647D;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.stars {
+    color: #ffc107;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.patient-text {
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.patient-info h5 {
+    font-weight: 700;
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.patient-treatment {
+    color: #2da1c2;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   7. FILOSOFÍA Y FOOTER
+   ========================================= */
+.philosophy-section {
+    background-color: #BDE1EE;
+    color: #333;
+    border-radius: 50px;
+    padding: 60px 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.philosophy-title {
+    color: #2da1c2;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #FFEEF2;
+    padding: 50px 0 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    border-top: 5px solid #BDE1EE;
+}
+
+.footer-title {
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    display: block;
+    color: #362626;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.footer-links a i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #EC647D;
+}
+
+.footer-links a:hover {
+    color: #EC647D;
+    transform: translateX(5px);
+}
+
+.social-icons a {
+    color: #555;
+    font-size: 1.4rem;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #EC647D;
+    transform: scale(1.1);
 }
